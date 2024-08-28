@@ -7,198 +7,384 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container text-center">
-      <div class="row">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="images\clearwater_deli_logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-              Clearwater Deli
-          </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="menu.html">Menu</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pictures.html">Pictures</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+    <div class="container text-center gap-3 row-gap-4">
+      <div class="row p-3">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="images\clearwater_deli_logo.png" alt="Logo" width="30" height="30" class="img-thumbnail d-inline-block align-text-top">
+                Clearwater Deli
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pictures.html">Pictures</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
+
       </div>
-      <div class="row">
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="nav-breakfast-tab" data-bs-toggle="tab" data-bs-target="#nav-breakfast" type="button" role="tab" aria-controls="nav-breakfast" aria-selected="true">Breakfast</button>
-            <button class="nav-link" id="nav-lunch-tab" data-bs-toggle="tab" data-bs-target="#nav-lunch" type="button" role="tab" aria-controls="nav-lunch" aria-selected="false">Lunch</button>
-            <button class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" type="button" role="tab" aria-controls="nav-drinks" aria-selected="false">Drinks</button>
-            <button class="nav-link" id="nav-sides-tab" data-bs-toggle="tab" data-bs-target="#nav-sides" type="button" role="tab" aria-controls="nav-sides" aria-selected="false" disabled>Sides</button>
-          </div>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-breakfast" role="tabpanel" aria-labelledby="nav-breakfast-tab" tabindex="0">
-              <div class="card-group">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Biscuit</h5>
-                    <p class="card-text">One fresh-baked biscuit, served plain or with jelly.</p>
-                    <p class="card-text"><small class="text-body-secondary">$1.49</small></p>
+      <div class="row p-3">
+        <div class="col">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-breakfast-tab" data-bs-toggle="tab" data-bs-target="#nav-breakfast" type="button" role="tab" aria-controls="nav-breakfast" aria-selected="true">Breakfast</button>
+              <button class="nav-link" id="nav-lunch-tab" data-bs-toggle="tab" data-bs-target="#nav-lunch" type="button" role="tab" aria-controls="nav-lunch" aria-selected="false">Lunch</button>
+              <button class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" type="button" role="tab" aria-controls="nav-drinks" aria-selected="false">Drinks</button>
+              <button class="nav-link" id="nav-sides-tab" data-bs-toggle="tab" data-bs-target="#nav-sides" type="button" role="tab" aria-controls="nav-sides" aria-selected="false" disabled>Sides</button>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-breakfast" role="tabpanel" aria-labelledby="nav-breakfast-tab" tabindex="0">
+                <div class="card-group p-3">
+                  <div class="row row-gap-4 row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-8">
+                    <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Biscuit</h5>
+                        <p class="card-text">One fresh-baked biscuit, served plain or with jelly.</p>
+                        <p class="card-text"><small class="text-body-secondary">$1.49</small></p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Egg and Cheese Biscuit</h5>
+                        <p class="card-text">One egg fried to request and topped with melted cheese, served on our signature fresh-baked biscuit.</p>
+                        <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Meat Biscuit</h5>
+                        <p class="card-text">A hearty portion of your choice of meat, served on our signature fresh-baked biscuit.</p>
+                        <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Meat, Egg, and Cheese Biscuit</h5>
+                        <p class="card-text">A hearty portion of your choice of meat, one egg fried to request, and melted cheese all piled onto our signature fresh-baked biscuit.</p>
+                        <p class="card-text"><small class="text-body-secondary">$3.79 or 2 for $7.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Meat, Egg, and Cheese Burrito</h5>
+                        <p class="card-text">One grilled burrito filled with a hearty portion of your choice of meat, one egg fried to request, and melted cheese.</p>
+                        <p class="card-text"><small class="text-body-secondary">$3.79 or 2 for $7.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Biscuit and Gravy</h5>
+                        <p class="card-text">One fresh-baked biscuit smothered in homestyle country gravy</p>
+                        <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Breakfast Platter</h5>
+                        <p class="card-text">Includes one biscuit with gravy, a hearty portion of your choice of meat, two eggs fried to request, one hashbrown patty or side of potato wedges, and a drink.</p>
+                        <p class="card-text"><small class="text-body-secondary">$8.49</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Toasted BLT</h5>
+                        <p class="card-text">Served with fried bacon, fresh cut tomato, and crisp leaf lettuce on texas toast. Substitute for toasted white bread or honey wheat slices.</p>
+                        <p class="card-text"><small class="text-body-secondary">$3.29</small></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Egg and Cheese Biscuit</h5>
-                    <p class="card-text">One egg fried to request and topped with melted cheese, served on our signature fresh-baked biscuit.</p>
-                    <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-lunch" role="tabpanel" aria-labelledby="nav-lunch-tab" tabindex="0">
+                <div class="card-group p-3">
+                  <div class="row row-gap-4 row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-8">
+                    <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Biscuit</h5>
+                        <p class="card-text">One fresh-baked biscuit, served plain or with jelly.</p>
+                        <p class="card-text"><small class="text-body-secondary">$1.49</small></p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Egg and Cheese Biscuit</h5>
+                        <p class="card-text">One egg fried to request and topped with melted cheese, served on our signature fresh-baked biscuit.</p>
+                        <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Meat Biscuit</h5>
+                        <p class="card-text">A hearty portion of your choice of meat, served on our signature fresh-baked biscuit.</p>
+                        <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Meat, Egg, and Cheese Biscuit</h5>
+                        <p class="card-text">A hearty portion of your choice of meat, one egg fried to request, and melted cheese all piled onto our signature fresh-baked biscuit.</p>
+                        <p class="card-text"><small class="text-body-secondary">$3.79 or 2 for $7.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Meat, Egg, and Cheese Burrito</h5>
+                        <p class="card-text">One grilled burrito filled with a hearty portion of your choice of meat, one egg fried to request, and melted cheese.</p>
+                        <p class="card-text"><small class="text-body-secondary">$3.79 or 2 for $7.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Biscuit and Gravy</h5>
+                        <p class="card-text">One fresh-baked biscuit smothered in homestyle country gravy</p>
+                        <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Breakfast Platter</h5>
+                        <p class="card-text">Includes one biscuit with gravy, a hearty portion of your choice of meat, two eggs fried to request, one hashbrown patty or side of potato wedges, and a drink.</p>
+                        <p class="card-text"><small class="text-body-secondary">$8.49</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Toasted BLT</h5>
+                        <p class="card-text">Served with fried bacon, fresh cut tomato, and crisp leaf lettuce on texas toast. Substitute for toasted white bread or honey wheat slices.</p>
+                        <p class="card-text"><small class="text-body-secondary">$3.29</small></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Meat Biscuit</h5>
-                    <p class="card-text">A hearty portion of your choice of meat, served on our signature fresh-baked biscuit.</p>
-                    <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-drinks" role="tabpanel" aria-labelledby="nav-drinks-tab" tabindex="0">
+                <div class="card-group p-3">
+                  <div class="row row-gap-4 row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-8">
+                    <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Biscuit</h5>
+                        <p class="card-text">One fresh-baked biscuit, served plain or with jelly.</p>
+                        <p class="card-text"><small class="text-body-secondary">$1.49</small></p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Egg and Cheese Biscuit</h5>
+                        <p class="card-text">One egg fried to request and topped with melted cheese, served on our signature fresh-baked biscuit.</p>
+                        <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Meat Biscuit</h5>
+                        <p class="card-text">A hearty portion of your choice of meat, served on our signature fresh-baked biscuit.</p>
+                        <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Meat, Egg, and Cheese Biscuit</h5>
+                        <p class="card-text">A hearty portion of your choice of meat, one egg fried to request, and melted cheese all piled onto our signature fresh-baked biscuit.</p>
+                        <p class="card-text"><small class="text-body-secondary">$3.79 or 2 for $7.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Meat, Egg, and Cheese Burrito</h5>
+                        <p class="card-text">One grilled burrito filled with a hearty portion of your choice of meat, one egg fried to request, and melted cheese.</p>
+                        <p class="card-text"><small class="text-body-secondary">$3.79 or 2 for $7.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Biscuit and Gravy</h5>
+                        <p class="card-text">One fresh-baked biscuit smothered in homestyle country gravy</p>
+                        <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Breakfast Platter</h5>
+                        <p class="card-text">Includes one biscuit with gravy, a hearty portion of your choice of meat, two eggs fried to request, one hashbrown patty or side of potato wedges, and a drink.</p>
+                        <p class="card-text"><small class="text-body-secondary">$8.49</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Toasted BLT</h5>
+                        <p class="card-text">Served with fried bacon, fresh cut tomato, and crisp leaf lettuce on texas toast. Substitute for toasted white bread or honey wheat slices.</p>
+                        <p class="card-text"><small class="text-body-secondary">$3.29</small></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Meat, Egg, and Cheese Biscuit</h5>
-                    <p class="card-text">A hearty portion of your choice of meat, one egg fried to request, and melted cheese all piled onto our signature fresh-baked biscuit.</p>
-                    <p class="card-text"><small class="text-body-secondary">$3.79 or 2 for $7.00</small></p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-sides" role="tabpanel" aria-labelledby="nav-sides-tab" tabindex="0">
+                <div class="card-group p-3">
+                  <div class="row row-gap-4 row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-8">
+                    <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Biscuit</h5>
+                        <p class="card-text">One fresh-baked biscuit, served plain or with jelly.</p>
+                        <p class="card-text"><small class="text-body-secondary">$1.49</small></p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Egg and Cheese Biscuit</h5>
+                        <p class="card-text">One egg fried to request and topped with melted cheese, served on our signature fresh-baked biscuit.</p>
+                        <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Meat Biscuit</h5>
+                        <p class="card-text">A hearty portion of your choice of meat, served on our signature fresh-baked biscuit.</p>
+                        <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Meat, Egg, and Cheese Biscuit</h5>
+                        <p class="card-text">A hearty portion of your choice of meat, one egg fried to request, and melted cheese all piled onto our signature fresh-baked biscuit.</p>
+                        <p class="card-text"><small class="text-body-secondary">$3.79 or 2 for $7.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Meat, Egg, and Cheese Burrito</h5>
+                        <p class="card-text">One grilled burrito filled with a hearty portion of your choice of meat, one egg fried to request, and melted cheese.</p>
+                        <p class="card-text"><small class="text-body-secondary">$3.79 or 2 for $7.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Biscuit and Gravy</h5>
+                        <p class="card-text">One fresh-baked biscuit smothered in homestyle country gravy</p>
+                        <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Breakfast Platter</h5>
+                        <p class="card-text">Includes one biscuit with gravy, a hearty portion of your choice of meat, two eggs fried to request, one hashbrown patty or side of potato wedges, and a drink.</p>
+                        <p class="card-text"><small class="text-body-secondary">$8.49</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Toasted BLT</h5>
+                        <p class="card-text">Served with fried bacon, fresh cut tomato, and crisp leaf lettuce on texas toast. Substitute for toasted white bread or honey wheat slices.</p>
+                        <p class="card-text"><small class="text-body-secondary">$3.29</small></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Meat, Egg, and Cheese Burrito</h5>
-                    <p class="card-text">One grilled burrito filled with a hearty portion of your choice of meat, one egg fried to request, and melted cheese.</p>
-                    <p class="card-text"><small class="text-body-secondary">$3.79 or 2 for $7.00</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Biscuit and Gravy</h5>
-                    <p class="card-text">One fresh-baked biscuit smothered in homestyle country gravy</p>
-                    <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Breakfast Platter</h5>
-                    <p class="card-text">Includes one biscuit with gravy, a hearty portion of your choice of meat, two eggs fried to request, one hashbrown patty or side of potato wedges, and a drink.</p>
-                    <p class="card-text"><small class="text-body-secondary">$8.49</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Toasted BLT</h5>
-                    <p class="card-text">Served with fried bacon, fresh cut tomato and crisp, leaf lettuce on texas toast. Substitute for toasted white bread or honey wheat slices.</p>
-                    <p class="card-text"><small class="text-body-secondary">$3.29</small></p>
-                  </div>
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="nav-lunch" role="tabpanel" aria-labelledby="nav-lunch-tab" tabindex="0">
-              <div class="card-group">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Lunch Platter</h5>
-                    <p class="card-text">Includes one biscuit with gravy, two fried eggs, one choice meat, one hasbrown patty or side of potato wedges, and a drink.</p>
-                    <p class="card-text"><small class="text-body-secondary">$8.49</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Biscuit with Gravy</h5>
-                    <p class="card-text">One fresh-baked biscuit smothered in homestyle country gravy</p>
-                    <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Toasted BLT</h5>
-                    <p class="card-text">Served with fried bacon, fresh cut tomato and peeled lettuce on texas toast. Substitute for toasted white bread or honey wheat slices.</p>
-                    <p class="card-text"><small class="text-body-secondary">$3.29</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="nav-drinks" role="tabpanel" aria-labelledby="nav-drinks-tab" tabindex="0">
-              <div class="card-group">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">20oz Fountain Soda</h5>
-                    <p class="card-text">Free flowing fountain products provided by Coca-Cola&copy;</p>
-                    <p class="card-text"><small class="text-body-secondary">$8.49</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Biscuit with Gravy</h5>
-                    <p class="card-text">One fresh-baked biscuit smothered in homestyle country gravy</p>
-                    <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Toasted BLT</h5>
-                    <p class="card-text">Served with fried bacon, fresh cut tomato and peeled lettuce on texas toast. Substitute for toasted white bread or honey wheat slices.</p>
-                    <p class="card-text"><small class="text-body-secondary">$3.29</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="nav-sides" role="tabpanel" aria-labelledby="nav-sides-tab" tabindex="0">
-              <div class="card-group">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Breakfast Platter</h5>
-                    <p class="card-text">Includes one biscuit with gravy, two fried eggs, one choice meat, one hasbrown patty or side of potato wedges, and a drink.</p>
-                    <p class="card-text"><small class="text-body-secondary">$8.49</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Biscuit with Gravy</h5>
-                    <p class="card-text">One fresh-baked biscuit smothered in homestyle country gravy</p>
-                    <p class="card-text"><small class="text-body-secondary">$2.79 or 2 for $5.00</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Toasted BLT</h5>
-                    <p class="card-text">Served with fried bacon, fresh cut tomato and peeled lettuce on texas toast. Substitute for toasted white bread or honey wheat slices.</p>
-                    <p class="card-text"><small class="text-body-secondary">$3.29</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
+
       </div>
-      <div class="row">
-        <div class="footer">
+      <div class="row p-3">
+        <div class="col footer border-top border-5 p-2">
           <footer>
               <p>Call us: <a href="tel:+14235924742">+1 (423) 592-4742</a></p>
               <p>Find us: <a href="geo:35.5204892,-84.6499971">1195 Co Rd 172, Athens, TN 37303</a></p>
               <p>See us: Mon-Fri 5:30am-2pm EST</p>
-              <p>2024 &copy; Clearwater Deli. All rights reserveds</p>
+              <p>2024 &copy; Clearwater Deli. All rights reserved.</p>
           </footer>
         </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="scripts/darkmodetoggle.js"></script>
   </body>
 </html>
